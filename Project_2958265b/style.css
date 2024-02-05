@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#map {
+  position: absolute;
+  left: 25%;
+  top: 0;
+  bottom: 0;
+  width: 75%;
+}
+.map-overlay {
+  position: absolute;
+  width: 25%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  font: bold 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif; /* Make the text bold */
+  background-color: #333; /* Change the background color to dark grey */
+  max-height: 100%;
+  overflow: hidden;
+}
+.map-overlay fieldset {
+  display: none;
+  background: #ddd;
+  border: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.map-overlay input {
+  display: block;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.map-overlay .listing {
+  overflow: auto;
+  max-height: 100%;
+  font-size: 14px;
+  color: white; /* Change the text color to white */
+  background-color: #333; /* Change the background color to dark grey */
+}
+
+.map-overlay .listing > * {
+  display: block;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.map-overlay .listing a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: white; /* Change the link text color to white */
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.map-overlay .listing a:last-child {
+  border: none;
+}
+
+.map-overlay .listing a:hover {
+  background: #f0f0f0;
+  color: #333; /* Change the link text color on hover */
+}
+
+.legend {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Change left to right */
+  z-index: 1;
+  background: #333; /* Dark grey background */
+  padding: 10px;
+  border-radius: 5px;
+  color: white; /* White text color */
+}
+
+.legend-item {
+  margin-bottom: 8px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.red-circle {
+  background-color: #05eb51;
+}
+
+.black-circle {
+  background-color: #000000;
+}
+
+.no-data-circle {
+  background-color: #fd2121; /* Adjust the color for no data as needed */
+}
