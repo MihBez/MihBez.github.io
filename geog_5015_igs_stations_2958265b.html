@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - GEOG_5015_IGS_Stations_2958265b</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>IGS STATIONS</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Including Mapbox JS API -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <!-- Including Mapbox CSS -->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+  <!-- Including Google Font CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styling for legend items */
+    .legend-item.legend-title .legend-text {
+      font-size: 25px;
+      color: pink;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Main title -->
+  <h1>IGS stations</h1>
+  <!-- Container for the map -->
+  <div id="map"></div>
+
+  <!-- Map overlay for additional features -->
+  <div class="map-overlay">
+    <!-- Search input field -->
+    <fieldset>
+      <input id="feature-filter" type="text" placeholder="Filter results by name and click on the station name">
+    </fieldset>
+    <!-- Container for listing features -->
+    <div id="feature-listing" class="listing"></div>
+  </div>
+  <!-- Button for returning to home view -->
+  <button id="home-button">Home</button>
+
+  <!-- Legend for map features -->
+  <div class="legend" id="legend">
+    <!-- Title of the legend -->
+    <div class="legend-item legend-title">
+      <div class="legend-text">IGS Stations</div>
+    </div>
+    <!-- Legend item for data received in the last 30 days -->
+    <div class="legend-item">
+      <div class="legend-key red-circle"></div>
+      <div class="legend-text">Data received in the last 30 days</div>
+    </div>
+    <!-- Legend item for no future data expected -->
+    <div class="legend-item">
+      <div class="legend-key black-circle"></div>
+      <div class="legend-text">No future data expected!</div>
+    </div>
+    <!-- Legend item for no data for over 30 days -->
+    <div class="legend-item">
+      <div class="legend-key no-data-circle"></div>
+      <div class="legend-text">No data for over 30 days!</div>
+    </div>
+    <!-- Additional information in the legend -->
+    <div class="legend-item additional-info">
+      <div class="legend-text">
+        <!-- Highlighted text for user attention -->
+        <span style="color: pink;">Click on the stations</span><br>
+        <!-- Additional instruction for the user -->
+        <span style="color: pink;">locations for more information!</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Including custom JavaScript file -->
+  <script src='app.js'></script>
+  <!-- Including Mapbox geocoder JavaScript library -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'>
+  </script>
+  <!-- Including Mapbox geocoder CSS -->
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

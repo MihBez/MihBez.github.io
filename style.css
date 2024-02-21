@@ -1,0 +1,126 @@
+/* Resetting margin and padding for the whole document */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the map container */
+#map {
+  position: absolute; /* Positioning the map absolutely */
+  left: 25%; /* Setting the left position to 25% of the viewport width */
+  top: 0; /* Aligning the top edge with the top of the viewport */
+  bottom: 0; /* Aligning the bottom edge with the bottom of the viewport */
+  width: 75%; /* Setting the width to 75% of the viewport width */
+}
+
+/* Styling for the map overlay container */
+.map-overlay {
+  position: absolute; /* Positioning the overlay absolutely */
+  width: 25%; /* Setting the width to 25% of the viewport width */
+  top: 0; /* Aligning the top edge with the top of the viewport */
+  bottom: 0; /* Aligning the bottom edge with the bottom of the viewport */
+  left: 0; /* Aligning the left edge with the left of the viewport */
+  font: bold 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif; /* Setting the font properties */
+  background-color: #333; /* Setting the background color */
+  max-height: 100%; /* Setting the maximum height to 100% of the viewport height */
+  overflow: hidden; /* Hiding overflow content */
+}
+
+/* Styling for the search input field */
+.map-overlay fieldset {
+  display: none; /* Hiding the fieldset element */
+  background: #ddd; /* Setting the background color */
+  border: none; /* Removing border */
+  padding: 10px; /* Adding padding */
+  margin: 0; /* Removing margin */
+}
+
+.map-overlay input {
+  display: block; /* Making the input a block element */
+  border: none; /* Removing border */
+  width: 100%; /* Setting the width to 100% */
+  border-radius: 3px; /* Adding border radius */
+  padding: 10px; /* Adding padding */
+  margin: 0; /* Removing margin */
+  box-sizing: border-box; /* Including padding and border in the width */
+}
+
+/* Styling for the feature listing container */
+.map-overlay .listing {
+  overflow: auto; /* Adding overflow behavior */
+  max-height: 100%; /* Setting the maximum height to 100% */
+  font-size: 14px; /* Setting the font size */
+  color: white; /* Setting the text color */
+  background-color: #333; /* Setting the background color */
+}
+
+.map-overlay .listing > * {
+  display: block; /* Making direct children block elements */
+  padding: 5px 10px; /* Adding padding */
+  margin: 0; /* Removing margin */
+}
+
+.map-overlay .listing a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Adding bottom border */
+  color: white; /* Setting text color */
+  text-decoration: none; /* Removing underline */
+  transition: background 0.3s; /* Adding transition effect */
+}
+
+.map-overlay .listing a:last-child {
+  border: none; /* Removing bottom border for last child */
+}
+
+.map-overlay .listing a:hover {
+  background: #f0f0f0; /* Changing background color on hover */
+  color: #333; /* Changing text color on hover */
+}
+
+/* Styling for the legend container */
+.legend {
+  position: absolute; /* Positioning the legend absolutely */
+  top: 10px; /* Setting the top position */
+  right: 10px; /* Setting the right position */
+  z-index: 1; /* Setting the stacking order */
+  background: #333; /* Setting the background color */
+  padding: 10px; /* Adding padding */
+  border-radius: 5px; /* Adding border radius */
+  color: white; /* Setting text color */
+}
+
+/* Styling for legend items */
+.legend-item {
+  margin-bottom: 8px; /* Adding bottom margin */
+}
+
+/* Styling for legend keys */
+.legend-key {
+  display: inline-block; /* Making the key an inline-block element */
+  border-radius: 50%; /* Adding border radius for circular shape */
+  width: 15px; /* Setting width */
+  height: 15px; /* Setting height */
+  margin-right: 5px; /* Adding right margin */
+  vertical-align: middle; /* Aligning vertically */
+}
+
+/* Styling for red circle legend item */
+.red-circle {
+  background-color: #05eb51; /* Setting background color */
+}
+
+/* Styling for black circle legend item */
+.black-circle {
+  background-color: #000000; /* Setting background color */
+}
+
+/* Styling for no data circle legend item */
+.no-data-circle {
+  background-color: #fd2121; /* Setting background color */
+}
+
+/* Additional styling for legend item with additional information */
+.legend-item.additional-info {
+  font-size: 18px; /* Setting font size */
+  color: pink; /* Setting text color */
+  margin-top: 20px; /* Adding top margin */
+}
